@@ -21,11 +21,6 @@ const Gallery = props => {
                 <div className="row">
                     <div className="col-md-12">
                         <div className="mu-gallery-area">
-                            <div className="mu-title">
-                                <h2>Titulo</h2>
-                                <p>testes descrição</p>
-                            </div>
-
                             <div className="mu-gallery-content">
                                 <div className="mu-gallery-body">
                                     <ul id="mixit-container" className="row">

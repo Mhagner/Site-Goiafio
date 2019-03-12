@@ -15,7 +15,7 @@ class Home extends Component {
     }
 
     getSlides() {
-        axios.get(`${URL}slides?`)
+        axios.get(`${URL}slides`)
             .then(resp => this.setState({ slides: resp.data, loading: false }))
     }
 
