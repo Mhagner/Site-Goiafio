@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
+import Image from 'react-shimmer'
 
 
 class Slide extends Component {
@@ -8,7 +9,12 @@ class Slide extends Component {
             <div className="mu-slider-single">
                 <div className="mu-slider-img">
                     <figure>
-                        <img src={this.props.imagem} alt="img" />
+                        <Image
+                            src={this.props.imagem}
+                            width={1920} height={500}
+                            style={{ objectFit: 'cover' }} // Style your <img> 
+                             // Customize the animation duration (s).
+                        />
                     </figure>
                 </div>
                 <div className="mu-slider-content">

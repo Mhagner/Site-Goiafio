@@ -1,9 +1,15 @@
 import React, { Component } from 'react'
 
+import FaixaPagina from '../componentes/faixaPagina'
+
+
 class Servico extends Component{
     render(){
         return(
-            <h2>Serviço</h2>
+            <div>
+                <FaixaPagina page='Serviço' />
+                <h2>Página de Serviço</h2>
+            </div>
         )
     }
 }
