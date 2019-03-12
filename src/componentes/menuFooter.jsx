@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default (props) => {
+export default () => {
     return (
         <div className="col-lg-3 col-md-3 col-sm-3">
             <div className="mu-footer-widget">
