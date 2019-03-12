@@ -15,13 +15,21 @@ class Home extends Component {
     }
 
     getSlides() {
-        axios.get(`${URL}slides?sort=_createdAt`)
+        axios.get(`${URL}slides?`)
             .then(resp => this.setState({ slides: resp.data, loading: false }))
+    }
+
+    returnDados() {
+        let dados
+        (!this.state.loading) ?
+            dados = <SlideGroup slides={this.state.slides} /> :
+            dados = <Loader />
+        return dados
     }
 
     render() {
         return (
-            <SlideGroup slides={this.state.slides} />
+             this.returnDados()
         );
     }
 }

@@ -6,7 +6,6 @@ import Sobre from './paginas/sobre'
 import Servicos from './paginas/servicos'
 import Contato from './paginas/contato'
 import Galeria from './paginas/galeria'
-import Page404 from './paginas/page404'
 
 import StartHeader from './templates/startHeader'
 import Menu from './templates/menu';
