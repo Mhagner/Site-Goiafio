@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import FaixaPagina from '../componentes/faixaPagina'
+import ContactComp from '../templates/contactComp';
 
 
 class Contato extends Component {
@@ -8,7 +9,7 @@ class Contato extends Component {
         return (
             <div>
                 <FaixaPagina page='Contato' />
-                <h2>Página de Contato</h2>
+                <ContactComp />
             </div>
         );
     }
