@@ -3,6 +3,8 @@ import axios from 'axios'
 
 import SlideGroup from './../templates/slideGroup';
 import Loader from '../componentes/loader'
+import ServiceHome from '../templates/serviceHome';
+import AboutUs from './../templates/aboutUs';
 
 const URL = 'http://localhost:3003/api/'
 
@@ -29,7 +31,10 @@ class Home extends Component {
 
     render() {
         return (
-             this.returnDados()
+            <div>
+                {this.returnDados()}
+                <ServiceHome />
+            </div>
         );
     }
 }

@@ -9,12 +9,7 @@ class Slide extends Component {
             <div className="mu-slider-single">
                 <div className="mu-slider-img">
                     <figure>
-                        <Image
-                            src={this.props.imagem}
-                            width={1920} height={500}
-                            style={{ objectFit: 'cover' }} // Style your <img> 
-                             // Customize the animation duration (s).
-                        />
+                        <img src={this.props.imagem} alt='image'/>
                     </figure>
                 </div>
                 <div className="mu-slider-content">

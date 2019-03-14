@@ -3,27 +3,38 @@ import axios from 'axios'
 
 import FaixaPagina from '../componentes/faixaPagina'
 import Gallery from '../templates/gallery';
+import Loader from '../componentes/loader'
 
-const URL = 'http://localhost:3003/api/galeria'
+const URL = 'http://localhost:3003/api/'
 
 class Galeria extends Component {
-    constructor(props){
+    constructor(props) {
         super(props)
-        this.state = { list: [] }       
-        
+        this.state = { list: [], loading: true }
+    }
+
+    getPhotos() {
+        axios.get(`${URL}galeria?sort=-createdAt`)
+            .then(resp => this.setState({ list: resp.data, loading: false }))
+    }
+
+    componentWillMount(){
         this.getPhotos()
     }
 
-    getPhotos(){
-        axios.get(`${URL}?sort=-createdAt`)
-            .then(resp => this.setState({ list: resp.data }))
+    returnGallery() {
+        let dados
+        (!this.state.loading) ?
+            dados = <Gallery list={this.state.list} /> :
+            dados = <Loader />
+        return dados
     }
 
     render() {
         return (
             <div>
                 <FaixaPagina page='Galeria' />
-                <Gallery list={this.state.list}/>
+                {this.returnGallery()}
             </div>
         );
     }
