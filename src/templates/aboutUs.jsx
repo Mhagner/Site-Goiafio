@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 
-import AboutTitle from '../componentes/aboutTitle'
-import AboutVideo from '../componentes/aboutVideo';
+import AboutComponent from '../componentes/aboutComponent'
 
 class AboutUs extends Component {
     render() {
         return (
             <section id="mu-about-us">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="mu-about-us-area">
-                                <div class="row">
-                                    <AboutTitle title='Titulo' />
-                                    <AboutVideo />
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <div className="mu-about-us-area">
+                                <div className="row">
+                                    <AboutComponent 
+                                        title='Titulo'
+                                        video=''
+                                    />
                                 </div>
                             </div>
                         </div>

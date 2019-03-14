@@ -16,12 +16,12 @@ class ServiceHome extends Component {
                                     description='testes descrição'
                                 />
                                 <ServiceSingle
-                                    icon='book'
+                                    icon='bank'
                                     title="Teste titulo"
                                     description='testes descrição'
                                 />
                                 <ServiceSingle
-                                    icon='book'
+                                    icon='send'
                                     title="Teste titulo"
                                     description='testes descrição'
                                 />

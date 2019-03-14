@@ -1,10 +1,8 @@
 import React from 'react'
 
-import '../assets/custom.css'
-
-const Loader = () => {
+const Loader = (props) => {
     return (
-        <div className='spinner'>
+        <div className={props.style}>
             <img src={require('../assets/gif/loader_azul.gif')} />
         </div>
     )

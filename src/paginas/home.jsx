@@ -25,7 +25,7 @@ class Home extends Component {
         let dados
         (!this.state.loading) ?
             dados = <SlideGroup slides={this.state.slides} /> :
-            dados = <Loader />
+            dados = <Loader style='spinner'/>
         return dados
     }
 

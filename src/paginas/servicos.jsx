@@ -7,7 +7,7 @@ class Servico extends Component{
         return(
             <div>
                 <FaixaPagina page='Serviço' />
-                <h3>Teste</h3>
+                <h2>Página serviço</h2>
             </div>
         )
     }
