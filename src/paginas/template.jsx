@@ -6,7 +6,7 @@ import Menu from '../templates/menu'
 import FooterTop from '../templates/footerTop'
 import Search from '../componentes/search'
 
-export default () => {
+export default (props) => {
     return (
         <div>
             {/*Templates*/}
@@ -15,7 +15,7 @@ export default () => {
             <Route path='/' component={Search} />
 
             {/*páginas*/}
-            {this.props.children}
+            {props.children}
 
             {/*Templates*/}
             <Route path='/' component={FooterTop} />

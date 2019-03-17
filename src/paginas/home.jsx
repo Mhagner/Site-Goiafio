@@ -5,15 +5,19 @@ import SlideGroup from './../templates/slideGroup';
 import Loader from '../componentes/loader'
 import ServiceHome from '../templates/serviceHome';
 import AboutUs from './../templates/aboutUs';
+import Products from '../templates/products'
+
 
 const URL = 'http://localhost:3003/api/'
 
 class Home extends Component {
     constructor(props) {
         super(props)
-        this.state = { slides: [], loading: true }
-
-        this.getSlides()
+        this.state = { 
+            slides: [], 
+            loading: true,
+            products: []
+        }
     }
 
     getSlides() {
@@ -21,7 +25,17 @@ class Home extends Component {
             .then(resp => this.setState({ slides: resp.data, loading: false }))
     }
 
-    returnDados() {
+    getProdutos(){
+        axios.get(`${URL}produtos`)
+            .then(resp => this.setState({ products: resp.data }))
+    }
+
+    componentWillMount(){
+        this.getSlides()
+        this.getProdutos()
+    }
+
+    returnSlide() {
         let dados
         (!this.state.loading) ?
             dados = <SlideGroup slides={this.state.slides} /> :
@@ -32,8 +46,13 @@ class Home extends Component {
     render() {
         return (
             <div>
-                {this.returnDados()}
+                {this.returnSlide()}
                 <ServiceHome />
+                <Products 
+                    title='Titulo'
+                    description='Descricao'
+                    products={this.state.products}
+                />
             </div>
         );
     }
