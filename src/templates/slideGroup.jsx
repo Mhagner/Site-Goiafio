@@ -1,5 +1,6 @@
 import React from 'react';
 import Slide from './slide';
+import ButtonPrev from '../componentes/buttonPrev'
 
 const SlideGroup = props => {
 
@@ -18,8 +19,22 @@ const SlideGroup = props => {
     }
 
     return (
-        <section id="mu-slider" >
-            {renderSlide()}
+        <section id="mu-slider" className='slick-initialized slick-slider'>
+            <ButtonPrev
+                label='Previous'
+                estilo='Previous'
+                type='prev'
+            />
+            <div aria-live="polite" className="slick-list draggable">
+                <div className="slick-track" role="listbox">
+                    {renderSlide()}
+                </div>
+            </div>
+            <ButtonPrev
+                label='Next'
+                estilo='Next'
+                type='next'
+            />
         </section >
     )
 }

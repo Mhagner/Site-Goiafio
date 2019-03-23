@@ -29,3 +29,31 @@
     color: black;
 }
 
+#mu-footer .mu-footer-top {
+    background-color: #5d4a5d;
+    display: inline;    
+    padding: 50px 0;
+}
+
+.mu-page-breadcrumb-area{
+    background-color: #242958;
+}
+
+#mu-page-breadcrumb{
+    background-color: #242958;
+}
+
+.image-logo{
+    max-width: 140px;
+    max-height: 140px;
+    width: 115px;
+    height: 55px;
+}
+
+.navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 9px;
+    overflow: visible !important;
+}
+

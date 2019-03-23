@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 class Slide extends Component {
     render() {
         return (
-            <div className="mu-slider-single">
+            <div className="mu-slider-single slick-slide">
                 <div className="mu-slider-img">
                     <figure>
                         <img src={this.props.imagem} alt='figura'/>

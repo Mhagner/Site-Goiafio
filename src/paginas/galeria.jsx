@@ -18,7 +18,7 @@ class Galeria extends Component {
             .then(resp => this.setState({ list: resp.data, loading: false }))
     }
 
-    componentWillMount(){
+    componentDidMount(){
         this.getPhotos()
     }
 
