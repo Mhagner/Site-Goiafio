@@ -2,8 +2,8 @@ import React from 'react'
 
 const Loader = (props) => {
     return (
-        <div className={props.style}>
-            <img src={require('../assets/gif/loader_azul.gif')} />
+        <div className={props.estilo}>
+            <img src={require('../assets/gif/loader_azul.gif')} alt='figure' />
         </div>
     )
 }

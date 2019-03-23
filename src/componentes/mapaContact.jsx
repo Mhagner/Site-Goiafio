@@ -4,7 +4,7 @@ export default (props) => {
     return (
         <div className="col-md-6">
             <div className="mu-contact-right">
-                <iframe
+                <iframe title='Title'
                     src={props.maps}
                     width="100%"
                     height="450"

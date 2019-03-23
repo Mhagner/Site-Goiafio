@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import FilterGallery from './../componentes/filterGallery';
+import React from 'react';
 import GallerySingle from './../componentes/gallerySingle';
 
 const Gallery = props => {

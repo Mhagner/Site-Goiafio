@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
-import Image from 'react-shimmer'
-
 
 class Slide extends Component {
     render() {
@@ -9,7 +7,7 @@ class Slide extends Component {
             <div className="mu-slider-single">
                 <div className="mu-slider-img">
                     <figure>
-                        <img src={this.props.imagem} alt='image'/>
+                        <img src={this.props.imagem} alt='figura'/>
                     </figure>
                 </div>
                 <div className="mu-slider-content">

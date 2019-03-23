@@ -8,7 +8,7 @@ export default (props) => {
     const renderProduct = () => {
         const products = props.products || []
         return products.map(product => (
-            <ProductComponent
+            <ProductComponent key={product._id}
                 imagem={product.imagem}
                 titulo={product.titulo}
                 descricao={product.descricao}

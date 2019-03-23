@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default (props) => {
     return (
@@ -6,9 +7,9 @@ export default (props) => {
             <div className="mu-footer-widget">
                 <h4>{props.title}</h4>
                 <ul>
-                    <li><a href="#">Link 1</a></li>                  
-                    <li><a href="#">Link 2</a></li>                  
-                    <li><a href="#">Link 3</a></li>                  
+                    <li><Link to="#">Link 1</Link></li>                  
+                    <li><Link to="#">Link 1</Link></li>                  
+                    <li><Link to="#">Link 1</Link></li>                  
                 </ul>
             </div>
         </div>

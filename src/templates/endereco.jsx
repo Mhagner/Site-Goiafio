@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 export default (props) => {
     const renderEndereco = () => {
         const endereco = props.endereco || []
         return endereco.map(item => (
-            <div className="mu-footer-widget">
-                <h4 key={item._id}>{item.titulo}</h4>
-                <address>
+            <div  key={item._id} className="mu-footer-widget">
+                <h4>{item.titulo}</h4>
+                <address key={item._id}>
                     <p>{item.endereco}</p>
                     <p>{item.telefone} </p>
                     <p>{item.site}</p>

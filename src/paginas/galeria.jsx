@@ -26,7 +26,7 @@ class Galeria extends Component {
         let dados
         (!this.state.loading) ?
             dados = <Gallery list={this.state.list} /> :
-            dados = <Loader style='spinner' />
+            dados = <Loader estilo='spinner' />
         return dados
     }
 

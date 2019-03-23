@@ -4,7 +4,6 @@ import axios from 'axios'
 import SlideGroup from './../templates/slideGroup';
 import Loader from '../componentes/loader'
 import ServiceHome from '../templates/serviceHome';
-import AboutUs from './../templates/aboutUs';
 import Products from '../templates/products'
 
 
@@ -39,7 +38,7 @@ class Home extends Component {
         let dados
         (!this.state.loading) ?
             dados = <SlideGroup slides={this.state.slides} /> :
-            dados = <Loader style='spinner'/>
+            dados = <Loader estilo='spinner'/>
         return dados
     }
 

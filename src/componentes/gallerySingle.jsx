@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Image from 'react-shimmer'
 
 class GallerySingle extends Component {
     render() {

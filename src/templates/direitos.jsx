@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default (props) => {
     return (
@@ -6,7 +7,7 @@ export default (props) => {
             <div className="container">
                 <div className="mu-footer-bottom-area">
                     <p>&copy; {props.descricao} -   
-                        <a href="#" rel="nofollow"> Developer by: {props.desenvolvedor}</a>
+                        <Link to="#" rel="nofollow"> Developer by: {props.desenvolvedor}</Link>
                     </p>
                 </div>
             </div>

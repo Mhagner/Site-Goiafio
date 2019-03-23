@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Route, BrowserRouter, Redirect } from "react-router-dom";
+import React from 'react';
+import { Route } from "react-router-dom";
 
 import StartHeader from '../templates/startHeader'
 import Menu from '../templates/menu'
