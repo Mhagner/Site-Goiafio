@@ -29,7 +29,7 @@ class Menu extends Component {
                                 <li><Link to='servicos'>Serviços</Link></li>
                                 <li><Link to='contato'>Contato</Link></li>
                                 <li><Link to='galeria'>Galeria</Link></li>
-                                <li><Link to='login'>Adm</Link></li>
+                                <li><Link to='404'>Adm</Link></li>
                                 <li><Link id="mu-search-icon" to='#'>
                                     <i className="fa fa-search"></i></Link>
                                 </li>
