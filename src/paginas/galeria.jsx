@@ -5,7 +5,7 @@ import FaixaPagina from '../componentes/faixaPagina'
 import Gallery from '../templates/gallery';
 import Loader from '../componentes/loader'
 
-const URL = 'http://localhost:3003/api/'
+const URL = process.env.REACT_APP_API_URL
 
 class Galeria extends Component {
     constructor(props) {

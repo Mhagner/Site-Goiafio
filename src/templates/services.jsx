@@ -12,14 +12,29 @@ export default (props) => {
                         <div className="mu-features-area">
                             <Title
                                 title="Serviços"
-                                productDescription="Descrição do bloco"
+                                description="Descrição do bloco"
                             />
                             <div className="mu-features-content">
                                 <div className="row">
                                     <ServiceIcon 
-                                        tituloServico='Serviços'
-                                        descricaoServico='Descrição servicos'
-                                        iconeServico='certificate'
+                                        tituloServico='Medidores de fios'
+                                        descricaoServico='Medidores de fios 150X450'
+                                        iconeServico='book'
+                                    />
+                                    <ServiceIcon 
+                                        tituloServico='Medidores de fios'
+                                        descricaoServico='Medidores de fios 150X450'
+                                        iconeServico='book'
+                                    />
+                                    <ServiceIcon 
+                                        tituloServico='Medidores de fios'
+                                        descricaoServico='Medidores de fios 150X450'
+                                        iconeServico='book'
+                                    />
+                                    <ServiceIcon 
+                                        tituloServico='Medidores de fios'
+                                        descricaoServico='Medidores de fios 150X450'
+                                        iconeServico='book'
                                     />
                                 </div>
                             </div>

@@ -8,7 +8,7 @@ import AboutUs from './../templates/aboutUs';
 import Products from '../templates/products'
 
 
-const URL = 'http://localhost:3003/api/'
+const URL = process.env.REACT_APP_API_URL
 
 class Home extends Component {
     constructor(props) {

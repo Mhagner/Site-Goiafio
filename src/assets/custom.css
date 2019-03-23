@@ -11,6 +11,14 @@
     height: auto;
 }
 
+.mu-single-gallery-img img{
+    max-width: 370px;
+    max-height: 220px;
+    width: auto;
+    height: auto;
+}
+
+
 .mu-price{
     color: rebeccapurple;
     font-weight: bold;
