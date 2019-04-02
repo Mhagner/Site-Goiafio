@@ -12,13 +12,15 @@ export default (props) => {
                     <div className="col-md-12">
                         <div className="mu-contact-area">
                             <TitleContact 
-                                title='Titulo do contato'
-                                description='descricao do contato'
+                                title='Entre em contato conosco'
+                                description='Preencha o formulário abaixo que em breve entraremos em contato'
                             />
                             <div className="mu-contact-content">
                                 <div className="row">
                                     <FormContact />
-                                    <MapaContact maps='' />
+                                    <MapaContact 
+                                        maps='https://maps.google.com/maps?q=manses%20paraiso&t=&z=13&ie=UTF8&iwloc=&output=embed' 
+                                    />
                                 </div>
                             </div>
                         </div>
