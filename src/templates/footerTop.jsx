@@ -7,7 +7,8 @@ import MenuFooter from '../componentes/menuFooter'
 import WidgetLink from '../componentes/widgetLink';
 import Subscribe from '../componentes/subscribe'
 
-const URL = 'http://localhost:3003/api/'
+const URL = process.env.REACT_APP_API_URL
+
 class Footer extends Component {
   constructor(props) {
     super(props)
