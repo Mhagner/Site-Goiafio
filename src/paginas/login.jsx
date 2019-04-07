@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
-import FaixaPagina from './../componentes/faixaPagina';
+
+import FaixaPagina from './../componentes/faixaPagina'
+import FormLogin from '../templates/formLogin'
 
 class Login extends Component {
     render() {
         return (
             <div>
                 <FaixaPagina page='Login' />
-                <h2>Página adm</h2>
-                
+                <FormLogin />
             </div>
         )
     }

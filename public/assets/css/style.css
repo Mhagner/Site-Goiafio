@@ -1846,8 +1846,9 @@ img {
 }
 #mu-contact .mu-contact-area .mu-contact-content .mu-contact-left .contactform input[type="text"],
 #mu-contact .mu-contact-area .mu-contact-content .mu-contact-left .contactform input[type="email"],
+#mu-contact .mu-contact-area .mu-contact-content .mu-contact-left .contactform input[type="password"],
 #mu-contact .mu-contact-area .mu-contact-content .mu-contact-left .contactform input[type="url"] {
-  border: none;
+  border: 2px;
   border: 1px solid #ddd;
   color: #555;
   margin-bottom: 10px;

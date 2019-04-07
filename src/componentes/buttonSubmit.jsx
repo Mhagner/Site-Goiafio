@@ -4,7 +4,10 @@ export default (props) => {
     return (
         <div>
             <p className="form-submit">
-                <input type="submit" value={props.name} className="mu-post-btn" name="submit" />
+                <button type="submit" className="mu-post-btn" name="submit">
+                    {props.name}
+                </button>
+
             </p>
         </div>
     )

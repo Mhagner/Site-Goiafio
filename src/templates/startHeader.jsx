@@ -13,8 +13,8 @@ class StartHeader extends Component {
                             <div className="mu-header-area">
                                 <div className="row">
                                     <TextHeader
-                                        email='m.hagner.sp@gmail.com'
-                                        telefone='(62) 99107-9788'
+                                        email='contato@goiafio.com.br'
+                                        telefone='(XX) XXXXX-XXXX'
                                     />
                                     <SocialIconsHeader />
                                 </div>
