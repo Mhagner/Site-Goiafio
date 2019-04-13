@@ -4,7 +4,7 @@ export default (props) => {
     return (
         <div>
             <p className="form-submit">
-                <button type="submit" className="mu-post-btn" name="submit">
+                <button type="submit" onClick={props.onClick} className="mu-post-btn" name="submit">
                     {props.name}
                 </button>
 

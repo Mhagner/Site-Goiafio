@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import { ToastContainer, toast } from 'react-toastify'
+import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
 
+import { notification } from '../componentes/messages'
 import Input from '../componentes/input'
 import TextArea from '../componentes/textArea'
 import ButtonSubmit from '../componentes/buttonSubmit'
@@ -36,15 +37,7 @@ class FormContact extends Component {
             assunto: '',
             message: ''
         })
-        toast.success('Mensagem enviada com sucesso!', {
-            position: "bottom-left",
-            autoClose: 1800,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true
-        });
-
+        notification('success', 'Mensagem enviada com sucesso!')
     }
 
     onSubmit = (e) => {

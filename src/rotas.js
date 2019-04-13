@@ -8,6 +8,7 @@ import Contato from './paginas/contato'
 import Galeria from './paginas/galeria'
 import Page404 from './paginas/page404'
 import Login from './paginas/login'
+import Produto from './paginas/produto'
 
 import Template from './paginas/template'
 
@@ -26,6 +27,7 @@ class Rotas extends Component {
                         <Route path='/galeria' component={Galeria} />
                         <Route path='/404' component={Page404} />
                         <Route path='/login' component={Login} />
+                        <Route path='/produto' component={Produto} />
                         {/*Not Found Page*/}
                         <Redirect to='/404' />
                     </Switch>
