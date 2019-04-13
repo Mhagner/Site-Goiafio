@@ -11,8 +11,8 @@ export default (props) => {
                     <div className="col-md-12">
                         <div className="mu-contact-area">
                             <TitleContact
-                                title='Acesso ao ambiente administrivo'
-                                description='Preencha os campos abaixo com as suas credenciais'
+                                title='Acesso ao ambiente administrativo'
+                                description='Preencha os campos abaixo com as suas credenciais de acesso'
                             />
                             <div className="mu-contact-content">
                                 <div className="row">

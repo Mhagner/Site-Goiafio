@@ -29,7 +29,7 @@ class Home extends Component {
             .then(resp => this.setState({ products: resp.data }))
     }
 
-    componentWillMount(){
+    componentDidMount(){
         this.getSlides()
         this.getProdutos()
     }
@@ -48,8 +48,8 @@ class Home extends Component {
                 {this.returnSlide()}
                 <ServiceHome />
                 <Products 
-                    title='Titulo'
-                    description='Descricao'
+                    title='Promoções'
+                    description='Veja as nossas promoções do dia'
                     products={this.state.products}
                 />
             </div>

@@ -1823,11 +1823,13 @@ img {
   float: left;
   margin-top: 50px;
   width: 100%;
+  justify-content: center;
 }
 #mu-contact .mu-contact-area .mu-contact-content .mu-contact-left {
   display: inline;
   float: left;
   width: 100%;
+  justify-content: center;
 }
 #mu-contact .mu-contact-area .mu-contact-content .mu-contact-left .contactform {
   display: inline;
