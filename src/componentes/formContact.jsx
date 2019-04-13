@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.min.css'
 
 import Input from '../componentes/input'
 import TextArea from '../componentes/textArea'
@@ -34,6 +36,15 @@ class FormContact extends Component {
             assunto: '',
             message: ''
         })
+        toast.success('Mensagem enviada com sucesso!', {
+            position: "bottom-left",
+            autoClose: 1800,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true
+        });
+
     }
 
     onSubmit = (e) => {
@@ -51,7 +62,6 @@ class FormContact extends Component {
         axios.post(`${URL}send_contato`, contact)
             .then(resp => {
                 this.clearForm()
-                console.log('E-mail enviado com sucesso!')
             })
             .catch(error => {
                 console.log(error.data)
@@ -114,6 +124,14 @@ class FormContact extends Component {
                         />
                         <ButtonSubmit
                             name='Enviar'
+                        />
+                        <ToastContainer
+                            newestOnTop={false}
+                            closeOnClick
+                            rtl={false}
+                            pauseOnVisibilityChange={false}
+                            draggable
+                            pauseOnHover
                         />
                     </form>
                 </div>
