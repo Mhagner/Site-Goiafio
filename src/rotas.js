@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Route, Redirect, Switch } from "react-router-dom";
+import PrivateRouter from './funcoes/privateRoutes';
 
 import Home from './paginas/home'
 import Sobre from './paginas/sobre'
@@ -9,32 +10,34 @@ import Galeria from './paginas/galeria'
 import Page404 from './paginas/page404'
 import Login from './paginas/login'
 import Usuarios from './paginas/usuarios'
-
 import Template from './paginas/template'
 
-class Rotas extends Component {
+const Rotas = () => {
+    return (
+        <div>
 
-    render() {
-        return (
-            <div>
+            <Switch>
                 <Template>
-                    <Switch>
-                        {/*Páginas*/}
-                        <Route path='/' exact component={Home} />
-                        <Route path='/sobre' component={Sobre} />
-                        <Route path='/servicos' component={Servicos} />
-                        <Route path='/contato' component={Contato} />
-                        <Route path='/galeria' component={Galeria} />
-                        <Route path='/404' component={Page404} />
-                        <Route path='/login' component={Login} />
-                        <Route path='/usuarios' component={Usuarios} />
-                        {/*Not Found Page*/}
-                        <Redirect to='/404' />
-                    </Switch>
+                    {/*Rotas públicas*/}
+                    <Route path='/' exact component={Home} />
+                    <Route path='/sobre' component={Sobre} />
+                    <Route path='/servicos' component={Servicos} />
+                    <Route path='/contato' component={Contato} />
+                    <Route path='/galeria' component={Galeria} />
+                    <Route path='/login' component={Login} />
+                    <Route path='/404' component={Page404} />
+
+
+                    {/*Rotas Privadas*/}
+                    <PrivateRouter path='/usuarios' component={Usuarios} />
+
+                    {/*Not Found Page*/}
                 </Template>
-            </div>
-        );
-    }
+            </Switch>
+
+        </div>
+    );
 }
+
 
 export default Rotas;

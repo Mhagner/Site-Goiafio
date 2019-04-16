@@ -7,7 +7,7 @@ class Login extends Component {
     render() {
         return (
             <div>
-                <FaixaPagina page='Login' />
+                {/*<FaixaPagina page='Login' />*/}
                 <FormLogin />
             </div>
         )

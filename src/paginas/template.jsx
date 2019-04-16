@@ -8,6 +8,7 @@ import Search from '../componentes/search'
 import ScrollToTop from '../componentes/scrollToTop'
 
 export default (props) => {
+    
     return (
         <div>
             {/*Templates*/}
