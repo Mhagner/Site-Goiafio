@@ -46,7 +46,7 @@ class Footer extends Component {
         </div>
         <Direitos
           descricao='Todos os direitos reservados - Goiafio '
-          desenvolvedor='Adriel'
+          desenvolvedor='Mahilson Hagnner'
         />
       </footer>
     );

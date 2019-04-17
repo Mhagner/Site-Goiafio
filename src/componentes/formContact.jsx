@@ -19,7 +19,9 @@ class FormContact extends Component {
             phone: '',
             name: '',
             assunto: '',
-            message: ''
+            message: '',
+            error: '',
+            successMsg: ''
         }
     }
 
@@ -37,7 +39,6 @@ class FormContact extends Component {
             assunto: '',
             message: ''
         })
-        notification('success', 'Mensagem enviada com sucesso!')
     }
 
     onSubmit = (e) => {
@@ -53,11 +54,11 @@ class FormContact extends Component {
         }
 
         axios.post(`${URL}send_contato`, contact)
-            .then(resp => {
-                this.clearForm()
-            })
+            .then(resp => this.setState({ successMsg: resp.data.success.toString() }))
+            .then(resp => notification('success', this.state.successMsg))
+            .then(resp => this.clearForm())
             .catch(error => {
-                console.log(error.data)
+                this.setState({ error: error.toString() })
             })
     }
 

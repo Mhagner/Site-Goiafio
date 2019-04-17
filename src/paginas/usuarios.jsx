@@ -13,7 +13,8 @@ class Usuarios extends Component {
         super(props)
 
         this.state = {
-            users: []
+            users: [],
+            messageSucess: ''
         }
     }
 
@@ -25,11 +26,11 @@ class Usuarios extends Component {
 
     deleteUser = user => {
         axios.delete(`${URL}usuarios/${user._id}`)
-            .then(resp => 
-                this.getUsers(),
-                notification('success', 'Usuários excluído com sucesso')
+            .then(resp => this.setState({ messageSucess: resp.data.message.toString() }
+            ))
+            .then(resp => this.getUsers()
             )
-
+            .then(resp => notification('success', this.state.messageSucess))
     }
 
     componentDidMount() {
@@ -39,7 +40,7 @@ class Usuarios extends Component {
     render() {
         return (
             <div>
-                <FaixaPagina page='Produto' />
+                <FaixaPagina page='Usuários' />
                 <h2>Página de Usuários</h2>
 
                 <Users
