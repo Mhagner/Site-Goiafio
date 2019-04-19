@@ -15,7 +15,6 @@ import Template from './paginas/template'
 const Rotas = () => {
     return (
         <div>
-
             <Switch>
                 <Template>
                     {/*Rotas públicas*/}
@@ -27,14 +26,12 @@ const Rotas = () => {
                     <Route path='/login' component={Login} />
                     <Route path='/404' component={Page404} />
 
-
                     {/*Rotas Privadas*/}
                     <PrivateRouter path='/usuarios' component={Usuarios} />
 
                     {/*Not Found Page*/}
                 </Template>
             </Switch>
-
         </div>
     );
 }
