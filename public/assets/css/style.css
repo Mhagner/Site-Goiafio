@@ -1801,7 +1801,7 @@ img {
   transition: all 0.5s;
 }
 #mu-gallery .mu-gallery-area #mixit-container .mix {
-  display: none;
+  display: float;
 }
 
 /*==================

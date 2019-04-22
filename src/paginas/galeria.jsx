@@ -33,7 +33,7 @@ class Galeria extends Component {
     render() {
         return (
             <div>
-                <FaixaPagina page='Galeria' />
+                <FaixaPagina page='Modelos' />
                 {this.returnGallery()}
             </div>
         );
