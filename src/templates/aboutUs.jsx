@@ -11,10 +11,7 @@ class AboutUs extends Component {
                         <div className="col-md-12">
                             <div className="mu-about-us-area">
                                 <div className="row">
-                                    <AboutComponent 
-                                        title='Titulo'
-                                        video=''
-                                    />
+                                    <AboutComponent />
                                 </div>
                             </div>
                         </div>

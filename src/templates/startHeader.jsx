@@ -14,7 +14,7 @@ class StartHeader extends Component {
                                 <div className="row">
                                     <TextHeader
                                         email='contato@goiafio.com.br'
-                                        telefone='(XX) XXXXX-XXXX'
+                                        telefone='(62) 98424-8630'
                                     />
                                     <SocialIconsHeader />
                                 </div>
