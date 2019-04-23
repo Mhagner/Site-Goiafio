@@ -18,7 +18,7 @@ export default (props) => {
     }
 
     return (
-        <section  id="mu-latest-courses">
+        <section id="mu-latest-courses">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12 col-md-12">
@@ -27,8 +27,14 @@ export default (props) => {
                                 title={props.title}
                                 description={props.description}
                             />
-                            <div className="mu-latest-courses-content" id="mu-latest-course-slide" >
-                                {renderProduct()}
+                            <div
+                                className="mu-latest-courses-content slick-initialized slick-slider"
+                                id="mu-latest-course-slide" role='toolbar'>
+                                <div aria-live='polite' className='slick-list draggable'>
+                                    <div className='slick-track' role='listbox'>
+                                        {renderProduct()}
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
