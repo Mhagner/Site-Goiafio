@@ -8,10 +8,9 @@ const SlideGroup = props => {
         const slides = props.slides || []
         return slides.map(slide => (
             <Slide key={slide._id}
-                imagem={slide.imagem}
+                url={slide.imagem}
                 titulo={slide.titulo}
                 subtitulo={slide.subtitulo}
-                texto={slide.texto}
                 link={slide.link}
                 label={slide.label}
             />
