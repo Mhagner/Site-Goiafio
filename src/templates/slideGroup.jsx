@@ -8,7 +8,7 @@ const SlideGroup = props => {
         const slides = props.slides || []
         return slides.map(slide => (
             <Slide key={slide._id}
-                url={slide.imagem}
+                url={slide.url}
                 titulo={slide.titulo}
                 subtitulo={slide.subtitulo}
                 link={slide.link}
@@ -23,6 +23,7 @@ const SlideGroup = props => {
             <div aria-live="polite" className="slick-list draggable">
                 <div className="slick-track" role="listbox">
                     {renderSlide()}
+                    {console.log(renderSlide())}
                 </div>
             </div>
             

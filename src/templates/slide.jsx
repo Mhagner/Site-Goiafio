@@ -7,14 +7,13 @@ class Slide extends Component {
             <div className="mu-slider-single slick-slide">
                 <div className="mu-slider-img">
                     <figure>
-                        <img src={this.props.imagem} alt='figura'/>
+                        <img src={this.props.url} alt='figura'/>
                     </figure>
                 </div>
                 <div className="mu-slider-content">
                     <h2>{this.props.titulo}</h2>
                     <span></span>
                     <h3>{this.props.subtitulo}</h3>
-                    <p>{this.props.texto}</p>
                     <Link className="mu-read-more-btn" to={this.props.link}>
                         {this.props.label}
                     </Link>
