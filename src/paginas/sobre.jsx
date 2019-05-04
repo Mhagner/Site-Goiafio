@@ -6,10 +6,12 @@ import AboutUs from './../templates/aboutUs';
 export default class Sobre extends Component {
   render() {
     return (
-        <div>
-            <FaixaPagina page='Sobre' />
-            <AboutUs />
-        </div>
+      <div>
+        <FaixaPagina
+          pageHome='Home'
+          page='Sobre' />
+        <AboutUs />
+      </div>
     )
   }
 }

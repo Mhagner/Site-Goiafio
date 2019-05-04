@@ -18,7 +18,7 @@ class Galeria extends Component {
             .then(resp => this.setState({ list: resp.data, loading: false }))
     }
 
-    componentDidMount(){
+    componentDidMount() {
         this.getPhotos()
     }
 
@@ -33,7 +33,9 @@ class Galeria extends Component {
     render() {
         return (
             <div>
-                <FaixaPagina page='Modelos' />
+                <FaixaPagina
+                    pageHome='Home'
+                    page='Modelos' />
                 {this.returnGallery()}
             </div>
         );

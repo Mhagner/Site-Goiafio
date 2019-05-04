@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
 
-import Rotas from './rotas'
 import { BrowserRouter } from 'react-router-dom';
 import './assets/custom.css'
+import PublicRoutes from './publicRoutes';
+import PrivateRoutes from './privateRoutes';
+
 
 class App extends Component {
+
   render() {
     return (
       <BrowserRouter>
-        <Rotas />
+        <div>
+          <PublicRoutes />
+        </div>
       </BrowserRouter>
     );
   }

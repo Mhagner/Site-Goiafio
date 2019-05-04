@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, Redirect, Switch } from "react-router-dom";
-import PrivateRouter from './funcoes/privateRoutes';
 
 import Home from './paginas/home'
 import Sobre from './paginas/sobre'
@@ -9,10 +8,9 @@ import Contato from './paginas/contato'
 import Galeria from './paginas/galeria'
 import Page404 from './paginas/page404'
 import Login from './paginas/login'
-import Usuarios from './paginas/usuarios'
 import Template from './paginas/template'
 
-const Rotas = () => {
+const PublicRoutes = () => {
     return (
         <div>
             <Switch>
@@ -25,11 +23,6 @@ const Rotas = () => {
                     <Route path='/galeria' component={Galeria} />
                     <Route path='/login' component={Login} />
                     <Route path='/404' component={Page404} />
-
-                    {/*Rotas Privadas*/}
-                    <PrivateRouter path='/usuarios' component={Usuarios} />
-
-                    {/*Not Found Page*/}
                 </Template>
             </Switch>
         </div>
@@ -37,4 +30,4 @@ const Rotas = () => {
 }
 
 
-export default Rotas;
+export default PublicRoutes;

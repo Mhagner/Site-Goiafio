@@ -7,9 +7,10 @@ export default (props) => {
             <div className="mu-footer-widget">
                 <h4>{props.title}</h4>
                 <ul>
-                    <li><Link to="#">Link 1</Link></li>                  
-                    <li><Link to="#">Link 1</Link></li>                  
-                    <li><Link to="#">Link 1</Link></li>                  
+                    <li>
+                       
+                        <a href={props.linkWebmail} target='_blank'>{props.webmail}</a>
+                    </li>
                 </ul>
             </div>
         </div>

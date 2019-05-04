@@ -4,11 +4,13 @@ import FaixaPagina from '../componentes/faixaPagina'
 import Services from '../templates/services'
 
 
-class Servico extends Component{
-    render(){
-        return(
+class Servico extends Component {
+    render() {
+        return (
             <div>
-                <FaixaPagina page='Serviço' />
+                <FaixaPagina
+                    pageHome='Home'
+                    page='Serviço' />
                 <Services />
             </div>
         )

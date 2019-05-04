@@ -8,7 +8,9 @@ class Contato extends Component {
     render() {
         return (
             <div>
-                <FaixaPagina page='Contato' />
+                <FaixaPagina
+                    pageHome='Home'
+                    page='Contato' />
                 <ContactComp />
             </div>
         );

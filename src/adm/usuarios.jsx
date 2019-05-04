@@ -40,7 +40,11 @@ class Usuarios extends Component {
     render() {
         return (
             <div>
-                <FaixaPagina page='Usuários' />
+                <FaixaPagina 
+                    linkHome='/adm'
+                    pageHome='Adm' 
+                    page='Usuários' 
+                    />
                 <h2>Página de Usuários</h2>
 
                 <Users

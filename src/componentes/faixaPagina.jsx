@@ -11,7 +11,7 @@ class FaixaPagina extends Component {
                             <div className="mu-page-breadcrumb-area">
                                 <h2>{this.props.page}</h2>
                                 <ol className="breadcrumb">
-                                    <li><Link to="/">Home</Link></li>
+                                    <li><Link to={`/${this.props.linkHome || ''}`}>{this.props.pageHome}</Link></li>
                                     <li className="active">{this.props.page}</li>
                                 </ol>
                             </div>

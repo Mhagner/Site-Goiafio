@@ -32,10 +32,14 @@ class Footer extends Component {
             <div className="mu-footer-top-area">
               <div className="row">
                 <MenuFooter />
-                <WidgetLink title='Widget Teste'/>
+                <WidgetLink 
+                  title='Outros links'
+                  linkWebmail='https://webmail1.weblink.com.br'
+                  webmail='Webmail'
+                />
                 <Subscribe 
                   title='Assinatura' 
-                  description='descrição testes'
+                  description='Deixe o seu e-mail para receber nossas promoções'
                   placeholder='Digite seu e-mail'
                   button='Assinar'
                 /> 
