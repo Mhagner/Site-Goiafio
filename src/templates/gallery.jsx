@@ -7,8 +7,7 @@ const Gallery = props => {
         return list.map(foto => (
             <GallerySingle key={foto._id}
                 title={foto.title}
-                bigImage={foto.bigImage}
-                smallImage={foto.smallImage}
+                url={foto.url}
                 text={foto.text}
             />
         ))
